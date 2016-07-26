@@ -1,0 +1,8 @@
+BUCKET=hellocloud.net
+USER=hellocloud-bob
+GROUP=HelloCloud
+REGION=us-east-1
+# rule for default website URL
+# <bucket-name>.s3-website-<AWS-region>.amazonaws.com
+WEBSITE=${BUCKET}.s3-website-${REGION}.amazonaws.com
+URL=http://${WEBSITE}
